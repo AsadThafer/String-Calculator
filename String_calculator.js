@@ -5,13 +5,15 @@ function String_calculator(numbers) {
   const nums = numbers.split(',');
   const answer = nums.reduce((acc, value) => {
     let val = parseInt(value);
-    if (val < 0) {
+    if (val > 1000) {
+     val = 0;
+    } else if (val < 0) {
       Negatives.push(val);
-      return acc
+      return acc;
     }
     return acc + val;
   }, 0)
-  if (Negatives.length) throw new Error('negatives not allowed ' + Negatives.join(',') ) 
+  if (Negatives.length) throw new Error('negatives not allowed ' + Negatives.join(',') ) ;
   return answer;
 }
 

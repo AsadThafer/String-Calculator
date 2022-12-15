@@ -10,7 +10,7 @@ this Task is a part of my internship at <a href="https://www.foothillsolutions.c
   and will return their sum (for an empty string it will return 0) for example “” or “1” or “1,2" .
 - Allow the Add method to handle an unknown amount of numbers.
 - Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed. if there are multiple negatives, show all of them in the exception message .
-4. Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2 .
+- Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2 .
 
 
 ## Installation
